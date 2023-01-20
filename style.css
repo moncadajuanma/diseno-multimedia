@@ -11,9 +11,8 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
   width: 100%;
-  height: 10vw;
+  height: 4.5vw;
   background-color: #24282b;
   border-bottom: solid 5px;
   border-color: #1293d4;
@@ -44,22 +43,24 @@ span {
 
 .descripcion {
 width: 100%;
-height: 35vh;
+height: 30vw;
+background-image: url(img/cabecera.jpg);
+background-position: 100%;
 }
 
 .suscribirse {
   width: 100%;
-  height: 10vh;
+  height: 5vw;
   background-color: #24282b;
 }
 
 .servicios {
   width: 100%;
-  height: 30vh;
+  height: 25vw;
 }
 
 .copyright {
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   background-color: #1293d4;
 }
