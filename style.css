@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family:Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .encabezado {
@@ -168,20 +168,10 @@ span {
   color: white;
 }
 
-/* *****MEDIA QUERIES****** */
-
-/* @media (max-width: 1050px) {
-  .salida-texto {
-    width: 40%;
-    margin: 0;
-  }
-  .boton-copiar {
-    width: 15rem;
-  }
-} */
+/* ***************MEDIA QUERIES******************/
 
 /********* MEDIA QUERIE TABLET *********/
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .encabezado {
     display: flex;
     flex-direction: column;
@@ -193,8 +183,8 @@ span {
     font-size: 1.5rem;
   }
   .descripcion {
-    justify-content:center;
-    background-size: contain;
+    justify-content: center;
+    background-size: 100%;
   }
   .texto-principal {
     width: 100%;
@@ -225,26 +215,78 @@ span {
   .lista-servicios ul {
     flex-direction: column;
     align-items: center;
+  }
+  .lista-servicios li {
+    width: auto;
+    margin: 1rem;
+    text-align: justify;
+  }
+  .lista-servicios img {
+    width: 12rem;
+  }
+  .copyright {
+    position: unset;
+    font-size: 1.2rem;
+    height: 6rem;
+  }
+  .redes-sociales {
+    font-size: 2rem;
+  }
 }
-.lista-servicios li {
-  width: auto;
-  margin: 1rem;
-  text-align: justify;
+
+/*****************MEDIA QUERIE LANDSCAPE*******************/
+@media (orientation: landscape) and (max-width: 860px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .encabezado {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  .encabezado li a {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+  }
+  .descripcion {
+    justify-content: center;
+    background-size: 100%;
+  }
+  .texto-principal h1 {
+    font-size: 3rem;
+    margin: 0.5rem;
+  }
+  .texto-principal p {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .suscribirse {
+    height: auto;
+  }
+  .boton-suscribirse {
+    flex-direction: row;
+  }
+  .servicios {
+    flex-direction: column;
+    height: auto;
+  }
+  .lista-servicios img {
+    size: 5rem;
+  }
+  .copyright {
+    position: unset;
+    font-size: 1.2rem;
+    height: 6rem;
+  }
+  .redes-sociales {
+    font-size: 2rem;
+  }
 }
-.lista-servicios img {
-  width: 12rem;
-}
-.copyright {
-  position: unset;
-  font-size: 1.2rem;
-  height: 6rem;
-}
-.redes-sociales {
-  font-size: 2rem;
-}
-}
+
 /********* MEDIA QUERIE CELULAR *********/
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     display: flex;
     flex-direction: column;
@@ -258,11 +300,12 @@ span {
     font-size: 3rem;
   }
   .encabezado li a {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin: 0.5rem;
   }
   .descripcion {
-    justify-content:center;
-    background-size: contain;
+    justify-content: center;
+    background-size: 100%;
   }
   .texto-principal {
     width: 100%;
@@ -295,21 +338,21 @@ span {
   .lista-servicios ul {
     flex-direction: column;
     align-items: center;
-}
-.lista-servicios li {
-  width: auto;
-  margin: 1rem;
-  text-align: justify;
-}
-.lista-servicios img {
-  width: 6rem;
-}
-.copyright {
-  position: unset;
-  font-size: 1.2rem;
-  height: 6rem;
-}
-.redes-sociales {
-  font-size: 2rem;
-}
+  }
+  .lista-servicios li {
+    width: auto;
+    margin: 1rem;
+    text-align: justify;
+  }
+  .lista-servicios img {
+    width: 6rem;
+  }
+  .copyright {
+    position: unset;
+    font-size: 1.2rem;
+    height: 6rem;
+  }
+  .redes-sociales {
+    font-size: 2rem;
+  }
 }
