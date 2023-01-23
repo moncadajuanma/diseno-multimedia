@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
 }
 
 .encabezado {
@@ -39,6 +40,10 @@ span {
   font-size: 1.6rem;
   color: white;
   text-decoration: none;
+}
+
+.lista-navbar li a:-webkit-any() {
+  color: #1293d4;
 }
 
 .descripcion {
@@ -132,7 +137,7 @@ span {
 }
 
 .lista-servicios img {
-  width: 15rem;
+  max-width: 14rem;
 }
 
 .lista-servicios h3 {
