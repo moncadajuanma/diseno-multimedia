@@ -202,7 +202,7 @@ span {
 .hacemos {
   display: flex;
   flex-direction: column;
-  max-width: 20%;
+  max-width: 30%;
   height: 69vh;
   margin: 0 2rem;
 }
@@ -210,8 +210,10 @@ span {
 .articulo-hacemos {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  width: auto;
   padding: 1rem;
-  margin: 2rem;
+  margin: 0.5rem;
   background-color: #35424a;
   color: white;
 }
@@ -220,6 +222,7 @@ span {
   font-size: 3rem;
   font-weight: bold;
   margin: 2rem 0;
+  padding: 1rem;
 }
 
 .parrafo-hacemos {
@@ -229,6 +232,7 @@ span {
   text-align: justify;
   align-content: space-around;
   flex-wrap: wrap;
+  padding: 1rem;
 }
 
 .titulo-nosotros {
@@ -239,7 +243,6 @@ span {
 .primer-parrafo {
   font-size: 1.7rem;
   height: 15vh;
-  margin: 2rem 0;
   padding: 1rem;
   text-align: justify;
 }
