@@ -16,8 +16,7 @@ body {
   max-width: 100%;
   height: 10vh;
   background-color: #24282b;
-  border-bottom: solid 5px;
-  border-color: #1293d4;
+  border-bottom: solid 5px #1293d4 ;
 }
 
 .title-navbar {
@@ -185,13 +184,14 @@ span {
   flex-direction: row;
   max-width: 100vw;
   justify-content: space-evenly;
+  height: auto;
 }
 
 .nosotros {
   display: flex;
   flex-direction: column;
   max-width: 50%;
-  height: 69vh;
+  height: 70vh;
   margin: 0 2rem;
 }
 
@@ -203,7 +203,7 @@ span {
   display: flex;
   flex-direction: column;
   max-width: 30%;
-  height: 69vh;
+  height: 70vh;
   margin: 0 2rem;
 }
 
@@ -228,7 +228,7 @@ span {
 .parrafo-hacemos {
   display: flex;
   font-size: 1.7rem;
-  height: 20vh;
+  height: auto;
   text-align: justify;
   align-content: space-around;
   flex-wrap: wrap;
@@ -242,7 +242,7 @@ span {
 
 .primer-parrafo {
   font-size: 1.7rem;
-  height: 15vh;
+  height: auto;
   padding: 1rem;
   text-align: justify;
 }
@@ -250,7 +250,7 @@ span {
 .segundo-parrafo {
   display: flex;
   font-size: 1.7rem;
-  height: 20vh;
+  height: auto;
   background-color: #35424a;
   color: white;
   margin: 2rem 0;
@@ -261,7 +261,7 @@ span {
 }
 
 .img-laptop {
-  max-width: 100%;
+  width: auto;
   margin: 2rem 0;
 }
 
@@ -269,7 +269,7 @@ span {
 
 /* ***************MEDIA QUERIES******************/
 
-/********* MEDIA QUERIE TABLET *********/
+/********* MEDIA QUERIE TABLET INDEX*********/
 @media screen and (max-width: 768px) {
   .encabezado {
     display: flex;
@@ -333,7 +333,7 @@ span {
   }
 }
 
-/*****************MEDIA QUERIE LANDSCAPE*******************/
+/*********MEDIA QUERIE LANDSCAPE INDEX***********/
 @media (orientation: landscape) and (max-width: 860px) {
   body {
     display: flex;
@@ -387,7 +387,7 @@ span {
   }
 }
 
-/********* MEDIA QUERIE CELULAR *********/
+/********* MEDIA QUERIE CELULAR INDEX*********/
 @media screen and (max-width: 480px) {
   body {
     display: flex;
@@ -460,4 +460,70 @@ span {
   .redes-sociales {
     font-size: 2rem;
   }
+}
+
+/* *******MEDIAQUERIE CELULAR NOSOTROS********* */
+
+@media screen and (max-width: 480px) {
+
+  .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.nosotros {
+  display: flex;
+  max-width: 100vw;
+  height: max-content;
+  align-items: center;
+  margin: 0;
+}
+
+.titulo-nosotros {
+  margin: 1rem 0 1rem 0;
+}
+
+.primer-parrafo {
+  height: auto;
+  max-width: 100vw;
+  padding: 1rem;
+}
+
+.img-laptop {
+  margin: 1rem;
+  border: solid 5px #1293d4 ;
+}
+
+.segundo-parrafo {
+  max-width: 100vw;
+  height: auto;
+  padding: 1rem;
+  margin: 0;
+}
+
+.hacemos {
+  max-width: 100vw;
+  margin: 0;
+  height: auto;
+}
+
+.articulo-hacemos {
+  padding: 1rem;
+  margin: 0;
+  gap: 1rem;
+}
+
+.titulo-hacemos {
+  margin: 0;
+  padding: 0;
+}
+
+.parrafo-hacemos {
+  padding: 0;
+  height: auto;
+}
+
 }
