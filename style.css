@@ -17,7 +17,7 @@ body {
   border-bottom: solid 5px #1293d4 ;
 }
 .title-navbar {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: bold;
   text-transform: capitalize;
   color: white;
@@ -38,6 +38,7 @@ span {
 }
 .lista-navbar li a:hover {
   color: #1293d4;
+  text-decoration: underline;
 }
 .descripcion {
   display: flex;
@@ -87,30 +88,36 @@ span {
   font-size: 1.5rem;
   padding: 0.5rem;
   margin: 0.2rem;
+  border-radius: 1rem;
 }
 .btn {
   background-color: #e8491d;
-  max-width: 10rem;
-  height: 3.82rem;
+  width: 10rem;
+  height: 3.8rem;
   color: white;
   font-size: 1.5rem;
   border: none;
+  border-radius: 1rem;
   cursor: pointer;
-  padding: 0.5rem;
   margin: 0.2rem;
+}
+.btn:hover {
+  background-color: #ff2600;
+  color: #24282b;
 }
 .servicios {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   max-width: 100%;
   height: 30vh;
 }
-.lista-servicios ul {
+.servicios ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.lista-servicios li {
+.servicios li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,15 +126,15 @@ span {
   width: 28vw;
   margin: 2rem;
 }
-.lista-servicios img {
+.servicios img {
   max-width: 13rem;
 }
-.lista-servicios h3 {
+.servicios h3 {
   font-size: 2rem;
   font-weight: bold;
   margin: 1rem;
 }
-.lista-servicios p {
+.servicios p {
   font-size: 1.5rem;
   text-align: justify;
 }
@@ -152,245 +159,23 @@ span {
 .redes-sociales a {
   color: rgb(0, 0, 0);
 }
-/* ****************STYLE NOSOTROS***************** */
-.about {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.nosotros {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: 0 2rem;
-}
-.titulo-nosotros {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 2rem 0 0;
-  margin-left: 5%;
-}
-.parrafo {
-  margin: 2rem 0;
-  margin-left: 5%;
-  padding: 1.5rem;
-  font-size: 1.5rem;
-  text-align: justify;
-  border: 1px solid #80808070;
-  border-radius: 1.5rem;
-  background-color: #e6e6e6;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.img-laptop {
-  margin: 2rem 0;
-  margin-left: 5%;
-  border-radius: 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.hacemos {
-    width: 30%;
-    height: 30%;
-    color: white;
-    border-radius: 1.5rem;
-    background-color: #35424a;
-    margin: 2rem 0;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.titulo-hacemos {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0;
-  padding: 1rem;
-}
-.parrafo-hacemos {
-  display: flex;
-  font-size: 1.5rem;
-  text-align: justify;
-  align-content: space-around;
-  padding: 1rem;
-}
-/* ****************STYLE SERVICIOS***************** */
-.all-services {
-  display: flex;
-  flex-direction: row;
-  max-height: 70vh;
-  justify-content: space-evenly;
-}
-.services {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-}
-.services h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 2rem 0 0;
-  margin-left: 5%;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #80808070;
-  border-radius: 1.5rem;
-  background-color: #e6e6e6;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  margin: 2rem 0;
-  margin-left: 5%;
-  padding: 1.5rem;
-}
-.card h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.card p {
-  margin: 0.5rem 0;
-  font-size: 1.5rem;
-}
-.doing {
-  width: 30%;
-  height: 30%;
-  color: white;
-  border-radius: 1.5rem;
-  background-color: #35424a;
-  margin: 2rem 0;
-  margin-left: 3%;
-  margin-right: 3%;
-  padding: 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.doing h2 {
-  margin-bottom: 0;
-  padding: 1rem;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.doing p {
-  margin: 1rem 0;
-  font-size: 1.5rem;
-  align-content: space-around;
-}
-/* ******** MEDIA QUERIES ******************/
 
-/********* MEDIA QUERIE TABLET INDEX ********/
-@media screen and (max-width: 767px) {
+/********* MEDIA QUERIE TABLET ********/
+
+@media screen and (max-width: 768px) {
   .encabezado {
     display: flex;
     flex-direction: column;
   }
-  .title-navbar {
-    font-size: 3rem;
-  }
   .encabezado li a {
-    font-size: 1.5rem;
-  }
-  .descripcion {
-    justify-content: center;
-    background-size: 100%;
-  }
-  .texto-principal {
-    width: 100%;
-  }
-  .texto-principal h1 {
-    font-size: 5rem;
-    margin: 0.5rem;
-  }
-  .texto-principal p {
-    font-size: 1.7rem;
-    text-align: justify;
-    margin: 1rem;
-  }
-  .suscribirse {
-    flex-direction: row;
-  }
-  .suscribirse h3 {
     font-size: 2rem;
   }
   .boton-suscribirse {
     display: flex;
     flex-direction: column;
   }
-  .servicios {
-    flex-direction: column;
-    height: auto;
-  }
-  .lista-servicios ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  .lista-servicios li {
-    width: auto;
-    margin: 1rem;
-    text-align: justify;
-  }
-  .lista-servicios img {
-    width: 12rem;
-  }
-  .copyright {
-    font-size: 1.2rem;
-    height: 6vh;
-  }
-  .redes-sociales {
-    font-size: 2rem;
-  }
-  /********* MEDIA QUERIE TABLET NOSOTROS *********/
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-  }
-  .nosotros {
-    display: flex;
-    max-width: 100vw;
-    height: max-content;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0;
-  }
-  .titulo-nosotros {
-    margin: 1rem 0 1rem 0;
-  }
-  .primer-parrafo {
-    height: auto;
-    max-width: 100vw;
-    padding: 1.5rem;
-  }
-  .img-laptop {
-    margin: 1.5rem 0;
-    border: solid 5px 0px;
-    border-color: #1293d4;
-  }
-  .segundo-parrafo {
-    max-width: 100vw;
-    height: auto;
-    padding: 1.5rem;
-    margin: 0;
-  }
-  .hacemos {
-    margin: 0;
-    max-width: 100vw;
-    height: auto;
-  }
-  .articulo-hacemos {
-    width: auto;
-    padding: 1.5rem;
-    margin: 0;
-  }
-  .titulo-hacemos {
-    margin: 0;
-    padding: 0;
-  }
-  .parrafo-hacemos {
-    padding: 0;
-    height: auto;
-  }
 }
-/*********MEDIA QUERIE LANDSCAPE INDEX***********/
+/*********MEDIA QUERIE LANDSCAPE ***********/
 @media (orientation: landscape) and (max-width: 1180px){
   body {
     display: flex;
@@ -442,48 +227,6 @@ span {
   .redes-sociales {
     font-size: 2rem;
   }
-  /****** MEDIA QUERIE LANDSCAPE NOSOTROS *******/
-  .about {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  .nosotros {
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    max-width: 80%;
-    margin: 0;
-    height: auto;
-  }
-  .primer-parrafo {
-    max-height: auto;
-    width: 80vw;
-  }
-  .img-laptop {
-    width: 105%;
-    margin: 1rem;
-  }
-  .segundo-parrafo {
-    width: 80vw;
-    padding: 1.5rem;
-  }
-  .hacemos {
-    max-width: 80vw;
-    margin: 0;
-    align-items: center;
-    height: auto;
-  }
-  .articulo-hacemos {
-    width: 80vw;
-    margin: 0;
-    padding: 1.5rem;
-  }
-  .parrafo-hacemos {
-    padding: 0;
-  }
 }
 /********* MEDIA QUERIE CELULAR **********/
 @media screen and (max-width: 480px) {
@@ -513,7 +256,7 @@ span {
     width: 100%;
   }
   .texto-principal h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 0.5rem;
   }
   .texto-principal p {
@@ -523,7 +266,7 @@ span {
   }
   .suscribirse {
     flex-direction: column;
-    height: 20vh;
+    height: 15vh;
     padding: 1rem 0;
   }
   .suscribirse h3 {
@@ -538,16 +281,16 @@ span {
     flex-direction: column;
     height: auto;
   }
-  .lista-servicios ul {
+  .servicios ul {
     flex-direction: column;
     align-items: center;
   }
-  .lista-servicios li {
+  .servicios li {
     width: auto;
     margin: 1rem;
     text-align: justify;
   }
-  .lista-servicios img {
+  .servicios img {
     width: 6rem;
   }
   .copyright {
@@ -558,58 +301,4 @@ span {
   .redes-sociales {
     font-size: 2rem;
   }
-
-/* ******* MEDIA QUERIE CELULAR NOSOTROS ********* */
-  .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
-}
-.nosotros {
-  display: flex;
-  max-width: 100vw;
-  height: max-content;
-  align-items: center;
-  margin: 0;
-}
-.titulo-nosotros {
-  margin: 1rem 0 1rem 0;
-}
-.primer-parrafo {
-  height: auto;
-  max-width: 85vw;
-  padding: 1.5rem;
-}
-.img-laptop {
-  width: 93%;
-  margin: 1.5rem 0;
-  border: solid 5px 0px;
-  border-color: #1293d4;
-}
-.segundo-parrafo {
-  max-width: 85vw;
-  height: auto;
-  padding: 1.5rem;
-  margin: 0;
-}
-.hacemos {
-  margin: 0;
-  max-width: 93vw;
-  height: auto;
-}
-.articulo-hacemos {
-  width: auto;
-  padding: 1.5rem;
-  margin: 0;
-}
-.titulo-hacemos {
-  margin: 0;
-  padding: 0;
-}
-.parrafo-hacemos {
-  padding: 0;
-  height: auto;
-}
 }
