@@ -9,6 +9,8 @@ body {
 .encabezado {
   display: flex;
   flex-direction: row;
+  position: sticky;
+  top: 0%;
   justify-content: space-around;
   align-items: center;
   max-width: 100%;

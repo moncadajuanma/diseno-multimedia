@@ -7,6 +7,7 @@ body {
   background-color: #f4f4f4;
 }
 .encabezado {
+  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -182,6 +183,8 @@ span {
     flex-direction: column;
   }
   .encabezado {
+    position: sticky;
+    top: 0%;
     display: flex;
     flex-direction: row;
     height: auto;
@@ -208,8 +211,14 @@ span {
     height: auto;
     padding: 0.5rem 0;
   }
+  .suscribirse h3 {
+    text-align: center;
+    font-size: 2rem;
+  }  
   .boton-suscribirse {
+    display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .servicios {
     flex-direction: column;
@@ -238,6 +247,8 @@ span {
   .encabezado {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0%;
     padding: 1rem 0;
     gap: 0.5rem;
   }

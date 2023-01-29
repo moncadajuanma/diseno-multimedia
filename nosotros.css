@@ -3,12 +3,13 @@ html {
 }
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  height: 100vh;
   background-color: #f4f4f4;
 }
 .encabezado {
   display: flex;
   flex-direction: row;
+  position: sticky;
+  top: 0%;
   justify-content: space-around;
   align-items: center;
   max-width: 100%;
@@ -44,7 +45,7 @@ span {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
   height: 10vh;
   background-color: #24282b;
 }
@@ -143,7 +144,7 @@ span {
 
 
 /********* MEDIA QUERIE TABLET *********/
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .about {
     display: flex;
     flex-direction: column;
@@ -160,9 +161,9 @@ span {
     margin: 0
     ;
   }
-}
+} */
 /****** MEDIA QUERIE LANDSCAPE *******/
-@media (orientation: landscape) and (max-width: 1024px) {
+/* @media (orientation: landscape) and (max-width: 1024px) {
   .about {
     flex-direction: column;
     flex-wrap: wrap;
@@ -204,47 +205,71 @@ span {
   .parrafo-hacemos {
     padding: 0;
   }
-}
+} */
 /* ******* MEDIA QUERIE CELULAR ********* */
 @media screen and (max-width: 480px) {
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0%;
+  justify-content: space-around;
+  align-items: center;
+}
+.lista-navbar {
+
+}
+.lista-navbar li a {
+  font-size: 1.1rem;
+}
+.suscribirse {
+  position: sticky;
+  top: 8.6rem;
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  text-align: center;
+}
+.suscribirse h3 {
+  font-size: 2rem;
+}
+.email {
+  width: 30rem;
+  height: 2.3rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.btn {
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
+  width: 100%;
 }
 .nosotros {
   display: flex;
-  max-width: 100vw;
-  height: max-content;
+  width: 100%;
   align-items: center;
   margin: 0;
 }
-.titulo-nosotros {
-  margin: 1rem 0 1rem 0;
-}
-.primer-parrafo {
+.parrafo {
   height: auto;
-  max-width: 85vw;
+  width: 85vw;
   padding: 1.5rem;
+  margin-left: 0%;
 }
 .img-laptop {
   width: 93%;
   margin: 1.5rem 0;
-  border: solid 5px 0px;
-  border-color: #1293d4;
-}
-.segundo-parrafo {
-  max-width: 85vw;
-  height: auto;
-  padding: 1.5rem;
-  margin: 0;
 }
 .hacemos {
-  margin: 0;
-  max-width: 93vw;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  margin: 0% 0% 5%;
 }
 .articulo-hacemos {
   width: auto;
@@ -252,27 +277,14 @@ span {
   margin: 0;
 }
 .titulo-hacemos {
-  margin: 0;
+  margin-bottom: 1rem;
   padding: 0;
 }
-.parrafo-hacemos {
-  padding: 0;
-  height: auto;
-}
-}
-
-
-
-
-
 .copyright {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  align-items: center;
   height: 10vh;
   background-color: #1293d4;
   font-size: 1.5rem;
@@ -280,9 +292,10 @@ span {
   gap: 1rem;
 }
 .redes-sociales {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 .redes-sociales a {
   color: rgb(0, 0, 0);
+}
 }
