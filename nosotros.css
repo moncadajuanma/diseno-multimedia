@@ -15,7 +15,7 @@ body {
   max-width: 100%;
   height: 10vh;
   background-color: #24282b;
-  border-bottom: solid 5px #1293d4 ;
+  border-bottom: solid 5px #1293d4;
 }
 .title-navbar {
   font-size: 3.5rem;
@@ -213,14 +213,10 @@ span {
   flex-direction: column;
   position: sticky;
   top: 0%;
-  justify-content: space-around;
-  align-items: center;
-}
-.lista-navbar {
-
 }
 .lista-navbar li a {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 .suscribirse {
   position: sticky;

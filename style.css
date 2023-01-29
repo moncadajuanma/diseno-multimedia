@@ -15,7 +15,7 @@ body {
   max-width: 100%;
   height: 10vh;
   background-color: #24282b;
-  border-bottom: solid 5px #1293d4 ;
+  border-bottom: solid 5px #1293d4;
 }
 .title-navbar {
   font-size: 4rem;
@@ -250,14 +250,14 @@ span {
     position: sticky;
     top: 0%;
     padding: 1rem 0;
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
   .title-navbar {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .encabezado li a {
-    font-size: 1.3rem;
-    margin: 0.5rem;
+    font-size: 1.5rem;
+    margin: 1rem;
   }
   .descripcion {
     justify-content: center;
