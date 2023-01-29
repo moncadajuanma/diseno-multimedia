@@ -101,3 +101,38 @@ span {
 .redes-sociales a {
   color: rgb(0, 0, 0);
 }
+
+/********* MEDIA QUERIE CELULAR **********/
+@media screen and (max-width: 480px) {
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0%;
+  }
+  .lista-navbar li a {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  .suscribirse {
+    position: sticky;
+    top: 8.6rem;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    text-align: center;
+  }
+  .suscribirse h3 {
+    font-size: 2rem;
+  }
+  .email {
+    width: 30rem;
+    height: 2.3rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .btn {
+    height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+}
