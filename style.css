@@ -154,7 +154,6 @@ span {
   gap: 1rem;
 }
 .redes-sociales {
-  font-size: 3.5rem;
   text-decoration: none;
 }
 .redes-sociales a {
@@ -307,10 +306,10 @@ span {
   }
   .copyright {
     position: unset;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 1rem 0 1rem 0;
   }
   .redes-sociales {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }

@@ -205,12 +205,16 @@ span {
   .all-services {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    justify-content: space-between;
     width: 100%;
   }
   .services {
     align-items: center;
     width: 100%;
+    height: auto;
+  }
+  .services h1 {
+    margin-left: 0%;
   }
   .card {
     margin-left: 0%;
@@ -219,11 +223,11 @@ span {
   .doing {
     width: 85%;
   }
-  /* .redes-sociales {
-    font-size: 2.5rem;
-    text-decoration: none;
+  .copyright {
+    position: absolute;
+    bottom: 0;
   }
-  .redes-sociales a {
-    color: rgb(0, 0, 0);
-  } */
+  .redes-sociales {
+    font-size: 2.5rem;
+  }
 }
