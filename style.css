@@ -308,7 +308,7 @@ span {
   }
   .servicios li {
     width: auto;
-    margin: 1rem;
+    margin: 2rem 0;
     text-align: justify;
     border: 1px solid #80808070;
     border-radius: 1rem;
