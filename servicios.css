@@ -40,6 +40,7 @@ span {
 }
 .lista-navbar li a:hover {
   color: #1293d4;
+  text-decoration: underline;
 }
 .suscribirse {
   display: flex;
@@ -82,7 +83,7 @@ span {
 .all-services {
   display: flex;
   flex-direction: row;
-  max-height: 70vh;
+  /* max-height: 70vh; */
   justify-content: space-evenly;
 }
 .services {
@@ -123,7 +124,7 @@ span {
   color: white;
   border-radius: 1.5rem;
   background-color: #35424a;
-  margin: 2rem 0;
+  margin: 7rem 0;
   margin-left: 3%;
   margin-right: 3%;
   padding: 1.5rem;
@@ -141,10 +142,6 @@ span {
   font-size: 1.5rem;
   align-content: space-around;
 }
-
-
-
-
 .copyright {
   display: flex;
   flex-direction: column;
@@ -169,13 +166,19 @@ span {
 
 /********* MEDIA QUERIE CELULAR **********/
 @media screen and (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
   .encabezado {
     display: flex;
     flex-direction: column;
     position: sticky;
     top: 0%;
     padding: 1rem 0;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .lista-navbar li a {
     font-size: 1.5rem;
@@ -183,18 +186,16 @@ span {
   }
   .suscribirse {
     position: sticky;
-    top: 8.9rem;
+    top: 9rem;
     display: flex;
     flex-direction: column;
-    height: 16.9%;
+    height: 14vh;
     text-align: center;
   }
   .suscribirse h3 {
     font-size: 2rem;
   }
   .email {
-    width: 30rem;
-    height: 2.3rem;
     font-size: 1.3rem;
     text-align: center;
   }
@@ -205,13 +206,12 @@ span {
   .all-services {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
   .services {
     align-items: center;
     width: 100%;
-    height: auto;
   }
   .services h1 {
     margin-left: 0%;
@@ -222,12 +222,18 @@ span {
   }
   .doing {
     width: 85%;
+    margin: 2rem 0 4rem;
   }
   .copyright {
-    position: absolute;
-    bottom: 0;
+    position: unset;
+    padding: 1rem 0;
+    gap: 1rem;
   }
   .redes-sociales {
     font-size: 2.5rem;
+    text-decoration: none;
   }
+  .redes-sociales a {
+    color: rgb(0, 0, 0);
+}
 }
