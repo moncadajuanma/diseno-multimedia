@@ -112,9 +112,8 @@ span {
     display: flex;
     flex-direction: column;
     position: sticky;
+    justify-content: space-evenly;
     top: 0%;
-    padding: 1rem 0;
-    gap: 1.5rem;
   }
   .lista-navbar li a {
     font-size: 1.5rem;
@@ -122,10 +121,10 @@ span {
   }
   .suscribirse {
     position: sticky;
-    top: 8.9rem;
+    top: 8.619rem;
     display: flex;
     flex-direction: column;
-    height: 16.9%;
+    height: 13.3vh;
     text-align: center;
   }
   .suscribirse h3 {
