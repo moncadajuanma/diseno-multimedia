@@ -1,66 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./contacto.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="./reset.css" />
-  <link rel="stylesheet" href="./contacto.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto</title>
-</head>
+  <body>
+    <header class="encabezado">
+      <div class="title-navbar">
+        <h2>Design <span>Multimedia</span></h2>
+      </div>
+      <div class="nav-bar">
+        <ul class="lista-navbar">
+          <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./nosotros.html">NOSOTROS</a></li>
+          <li><a href="./servicios.html">SERVICIOS</a></li>
+          <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="suscribirse">
+      <h3>Suscribete a nuestro boletin</h3>
+      <article class="boton-suscribirse">
+        <input class="email" type="email" placeholder="Ingrese el email..." />
+        <button class="btn">suscribete</button>
+      </article>
+    </section>
+    <main class="principal">
+      <section class="contacto">
+        <h2 class="titulo-contacto">Contacto</h2>
+        <form action="" class="formulario">
+          <label for="nombre">Nombre</label>
+          <input
+            id="nombre"
+            class="nombre"
+            type="text"
+            placeholder="Ingresa tu nombre"
+          />
+          <label for="email-form">Email</label>
+          <input
+            id="email-form"
+            class="email-form"
+            type="email"
+            placeholder="Ingresa tu email"
+          />
+          <label for="telefono">Telefono</label>
+          <input
+            id="telefono"
+            class="telefono"
+            type="tel"
+            placeholder="Ingresa tu telefono"
+          />
+          <label for="celular">Celular</label>
+          <input
+            id="celular"
+            class="celular"
+            type="tel"
+            placeholder="Ingresa tu celular"
+          />
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            class="mensaje"
+            cols="35"
+            rows="10"
+            placeholder="Escribe tu mensaje aqui..."
+          ></textarea>
+          <button type="submit" id="Boton-enviar" class="btn">Enviar</button>
+        </form>
+      </section>
+      <section class="hacemos">
+        <h2 class="titulo-hacemos">Que hacemos</h2>
+        <p class="parrafo-hacemos">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit vel
+          tempore beatae maiores, dolores illo nulla quidem a aut accusantium
+          laudantium quaerat dolorum itaque suscipit dolore consequuntur
+          excepturi adipisci!
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1406.200182652704!2d-75.6749536773065!3d4.5336079634061175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f53d5fcf1aa3%3A0x6e2f3388d5a3b792!2sSERF%20LTDA%20-%20Servicios%20Especializados%20en%20Revisor%C3%ADa%20Fiscal!5e0!3m2!1ses!2sco!4v1675228516858!5m2!1ses!2sco"
+          width="300"
+          height="225"
+          style="border: 0"
+          allowfullscreen="true"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+    </main>
 
-<body>
-  <header class="encabezado">
-    <div class="title-navbar">
-      <h2>Design <span>Multimedia</span></h2>
-    </div>
-    <div class="nav-bar">
-      <ul class="lista-navbar">
-        <li><a href="./index.html">INICIO</a></li>
-        <li><a href="./nosotros.html">NOSOTROS</a></li>
-        <li><a href="./servicios.html">SERVICIOS</a></li>
-        <li><a href="./contacto.html">CONTACTO</a></li>
-      </ul>
-    </div>
-  </header>
-  <section class="suscribirse">
-    <h3>Suscribete a nuestro boletin</h3>
-    <article class="boton-suscribirse">
-      <input class="email" type="email" placeholder="Ingrese el email..." />
-      <button class="btn">suscribete</button>
-    </article>
-  </section>
-  <section class="contacto">
-    <h2>Contacto</h2>
-    <form action="">
-      <label for="nombre">Nombre</label>
-      <input id="nombre" class="nombre" type="text" placeholder="Ingresa tu nombre">
-      <label for="email-f">Email</label>
-      <input id="email-f" class="email-f" type="email" placeholder="Ingresa tu email">
-      <label for="telefono">Telefono</label>
-      <input id="telefono" class="telefono" type="tel" placeholder="Ingresa tu telefono">
-      <label for="celular">Celular</label>
-      <input id="celular" class="celular" type="tel" placeholder="Ingresa tu celular">
-      <label for="mensaje">Mensaje</label>
-      <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje aqui..."></textarea>
-      <button type="submit" id="Boton-enviar" class="boton-enviar">Enviar</button>
-    </form>
-  </section>
-  <section class="hacemos">
-    <h2 class="titulo-hacemos">Que hacemos</h2>
-    <p class="parrafo-hacemos">Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit vel tempore beatae maiores, dolores illo nulla quidem a aut accusantium laudantium quaerat dolorum itaque suscipit dolore consequuntur excepturi adipisci!</p>
-  </section>
-  <footer class="copyright">
-    <p>&copy 2023 Juan Manuel Moncada Orjuela</p>
-    <div class="redes-sociales">
-      <a href="https://github.com/moncadajuanma"><i class="bi bi-github" id="logo-git"></i></a>
-      <a href="https://linkedin.com/in/juan-manuel-moncada-orjuela-1b3678120"><i class="bi bi-linkedin"
-          id="logo-linkedin"></i></a>
-      <a href="mailto:juanm-moncada@hotmail.com"><i class="bi bi-envelope-at-fill" id="logo-email"></i></a>
-    </div>
-  </footer>
-</body>
-
+    <footer class="copyright">
+      <p>&copy 2023 Juan Manuel Moncada Orjuela</p>
+      <div class="redes-sociales">
+        <a href="https://github.com/moncadajuanma"
+          ><i class="bi bi-github" id="logo-git"></i
+        ></a>
+        <a href="https://linkedin.com/in/juan-manuel-moncada-orjuela-1b3678120"
+          ><i class="bi bi-linkedin" id="logo-linkedin"></i
+        ></a>
+        <a href="mailto:juanm-moncada@hotmail.com"
+          ><i class="bi bi-envelope-at-fill" id="logo-email"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
 </html>
