@@ -84,77 +84,74 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
   width: 100%;
-  height: 70%;
+  height: 70vh;
 }
 .contacto {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 40%;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
 }
 .titulo-contacto {
   font-size: 3rem;
   text-align: center;
-  margin-top: 2rem;
+  margin: 0 0 1rem;
   font-weight: bold;
 }
 .formulario {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 70vh;
-  margin-left: 15rem;
+  /* height: 100vh; */
 }
 label {
-  margin-left: 11rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
 input {
-  margin: 0.5rem 2rem 1.5rem 10rem;
-  width: 50%;
   height: 2rem;
   padding: 0.5rem 2rem ;
   font-size: 1.5rem;
+  text-align: center;
   border: 1px solid #80808070;
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
   rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 textarea {
-  margin: 0.5rem 2rem 1.5rem 10rem;
-  width: 50%;
+  width: 100%;
   border-radius: 1rem;
   padding: 1rem;
-  font-size: 1.5rem;
   border: 1px solid #80808070;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
   rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.btn {
-  margin-left: 10rem ;
-}
-.hacemos {
+/* .btn {
+  
+} */
+/* .hacemos {
   display: flex;
   flex-direction: column;
   align-content: center;
-  flex-wrap: wrap;
-  width: 40%;
-  margin: 1rem 10rem 1rem 10rem;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
 }
 .titulo-hacemos {
   font-size: 3rem;
   font-weight: bold;
-  margin: 0;
-  padding: 1rem;
+  margin: 0 0 1rem;
 }
 .parrafo-hacemos {
-  font-size: 1.5rem;
   text-align: justify;
-  width: 55%;
+  width: 50%;
   height: auto;
   padding: 2rem;
+  font-size: 1.5rem;
   color: rgb(255, 255, 255);
   background-color: #35424a;
   border: 1px solid #80808070;
@@ -163,15 +160,15 @@ textarea {
   rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 iframe {
-  width: 60%;
+  width: 100%;
   height: 30vh;
   margin: 2rem 0;
   border: 1px solid #80808070;
   border-radius: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
   rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.copyright {
+} */
+/* .copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,7 +188,7 @@ iframe {
 }
 .redes-sociales a {
   color: rgb(0, 0, 0);
-}
+} */
 
 /********* MEDIA QUERIE CELULAR **********/
 /* @media screen and (max-width: 480px) {
