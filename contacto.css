@@ -83,92 +83,79 @@ span {
 .principal {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  height: 70vh;
+  align-items: center;
+  justify-items: center;
+  height: 69vh;
+  width: 70%;
+  margin-left: 15%;
 }
 .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
-  width: 100%;
+  height: 65vh;
+  width: 60%;
 }
 .titulo-contacto {
   font-size: 3rem;
   text-align: center;
-  margin: 0 0 1rem;
+  margin: 2rem 0 2rem;
   font-weight: bold;
 }
 .formulario {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
-  /* height: 100vh; */
-}
+} 
 label {
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 1rem 0 0.5rem;
 }
 input {
   height: 2rem;
   padding: 0.5rem 2rem ;
   font-size: 1.5rem;
-  text-align: center;
-  border: 1px solid #80808070;
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-  rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border: 1px solid #31313170;
 }
 textarea {
-  width: 100%;
-  border-radius: 1rem;
+  width: 97%;
   padding: 1rem;
   border: 1px solid #80808070;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-  rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-/* .btn {
-  
-} */
-/* .hacemos {
+.btn {
+  margin-top: 2rem;
+}
+.hacemos {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
-  height: 70vh;
-  width: 100%;
+  height: 65vh;
+  width: 40%;
 }
 .titulo-hacemos {
   font-size: 3rem;
   font-weight: bold;
-  margin: 0 0 1rem;
+  margin: 2rem 0 2rem;
 }
 .parrafo-hacemos {
   text-align: justify;
-  width: 50%;
+  width: 73%;
   height: auto;
   padding: 2rem;
+  margin: 3rem 0 0;
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
   background-color: #35424a;
-  border: 1px solid #80808070;
-  border-radius: 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-  rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 iframe {
-  width: 100%;
+  width: 80%;
   height: 30vh;
   margin: 2rem 0;
   border: 1px solid #80808070;
-  border-radius: 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-  rgba(0, 0, 0, 0.22) 0px 10px 10px;
-} */
-/* .copyright {
+}
+.copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -188,27 +175,31 @@ iframe {
 }
 .redes-sociales a {
   color: rgb(0, 0, 0);
-} */
+}
 
 /********* MEDIA QUERIE CELULAR **********/
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  body {
+    height: 100vh;
+  }
   .encabezado {
     display: flex;
     flex-direction: column;
     position: sticky;
     justify-content: space-evenly;
     top: 0%;
+    padding: 1rem 0;
+    gap: 1rem;
   }
   .lista-navbar li a {
     font-size: 1.5rem;
     margin: 1rem;
   }
   .suscribirse {
-    position: sticky;
-    top: 8.619rem;
     display: flex;
     flex-direction: column;
-    height: 13.3vh;
+    justify-content: flex-start;
+    height: 16.5vh;
     text-align: center;
   }
   .suscribirse h3 {
@@ -222,16 +213,16 @@ iframe {
   }
   .btn {
     height: 3rem;
-    margin-bottom: 0.5rem;
+    margin: 0.2rem;
   }
   .principal {
-    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 63.5vh;
+    margin: 0;
   }
   .contacto {
     display: flex;
@@ -240,63 +231,36 @@ iframe {
     width: 100%;
   }
   .titulo-contacto {
-    font-size: 3rem;
-    margin-top: 2rem;
-    font-weight: bold;
+    margin: 1rem;
   }
   .formulario {
-    display: flex;
-    flex-direction: column;
-  }
-  label {
-    margin-left: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  input {
-    margin: 0.5rem 2rem 1.5rem 2rem;
-    width: 85%;
-    border-radius: 1rem;
-    border: 1px solid #80808070;
-    height: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 90%;
+    height: 60vh;
   }
   .mensaje {
-    width: 85%;
-  }
-  textarea {
-    margin: 0.5rem 2rem 1.5rem 2rem;
-    width: 85%;
-    border-radius: 1rem;
-    border: 1px solid #80808070;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 93.5%;
   }
   .hacemos {
-    width: 30%;
-    height: 30%;
+    width: 100%;
     color: white;
-    border-radius: 1.5rem;
-    background-color: #35424a;
-    margin: 2rem 0;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-      rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .titulo-hacemos {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 1rem;
+    color: black;
+    margin: 1rem;
   }
   .parrafo-hacemos {
     display: flex;
-    font-size: 1.5rem;
-    text-align: justify;
-    align-content: space-around;
-    padding: 1rem;
+    width: 80%;
+    margin: 1rem;
   }
-} */
+  iframe {
+    width: 90%;
+  }
+  .copyright {
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 0;
+  }
+  .redes-sociales {
+    font-size: 2.5rem;
+  }
+}

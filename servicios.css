@@ -184,11 +184,9 @@ span {
     margin: 1rem;
   }
   .suscribirse {
-    position: sticky;
-    top: 9rem;
     display: flex;
     flex-direction: column;
-    height: 14vh;
+    height: 17vh;
     text-align: center;
   }
   .suscribirse h3 {

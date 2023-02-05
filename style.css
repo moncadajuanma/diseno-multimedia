@@ -159,6 +159,7 @@ span {
   gap: 1rem;
 }
 .redes-sociales {
+  font-size: 3.5rem;
   text-decoration: none;
 }
 .redes-sociales a {
@@ -283,7 +284,7 @@ span {
   .suscribirse {
     flex-direction: column;
     justify-content: center;
-    height: 14vh;
+    height: 16.5vh;
   }
   .suscribirse h3 {
     font-size: 2rem;
