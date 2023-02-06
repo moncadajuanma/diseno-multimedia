@@ -83,6 +83,7 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin: 0 10%;
 }
 .services {
   display: flex;

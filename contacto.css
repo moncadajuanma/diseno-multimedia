@@ -132,20 +132,20 @@ textarea {
   height: 65vh;
   width: 40%;
 }
-.titulo-hacemos {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 2rem 0 2rem;
-}
-.parrafo-hacemos {
+.card-hacemos {
   text-align: justify;
   width: 73%;
   height: auto;
   padding: 2rem;
-  margin: 3rem 0 0;
+  margin: 7rem 0 0;
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
   background-color: #35424a;
+}
+.titulo-hacemos {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 iframe {
   width: 80%;
