@@ -84,14 +84,13 @@ span {
   align-items: center;
   justify-items: center;
   height: 69vh;
-  width: 70%;
-  margin-left: 15%;
+  margin: 0 15%;
 }
 .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 65vh;
+  /* height: 65vh; */
   width: 60%;
 }
 .titulo-contacto {
@@ -129,7 +128,7 @@ textarea {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  height: 65vh;
+  /* height: 65vh; */
   width: 40%;
 }
 .card-hacemos {
@@ -177,15 +176,13 @@ iframe {
 
 /********* MEDIA QUERIE CELULAR **********/
 @media screen and (max-width: 480px) {
-  body {
-    height: 100vh;
-  }
+  
   .encabezado {
     display: flex;
     flex-direction: column;
     position: sticky;
-    justify-content: space-evenly;
     top: 0%;
+    justify-content: space-evenly;
     padding: 1rem 0;
     gap: 1rem;
   }
@@ -217,9 +214,9 @@ iframe {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
-    height: 63.5vh;
+    height: 150vh;
     margin: 0;
   }
   .contacto {
@@ -233,30 +230,40 @@ iframe {
   }
   .formulario {
     width: 90%;
-    height: 60vh;
   }
   .mensaje {
     width: 93.5%;
   }
+  #boton-enviar {
+    margin-top: 1rem
+  }
   .hacemos {
     width: 100%;
-    color: white;
+    margin-top: 1rem;
+  }
+  .card-hacemos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0rem;
+    padding: 0rem;
   }
   .titulo-hacemos {
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 1rem;
   }
   .parrafo-hacemos {
     display: flex;
-    width: 80%;
-    margin: 1rem;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 2rem;
   }
   iframe {
     width: 90%;
   }
   .copyright {
-    font-size: 1.5rem;
-    padding: 1rem 0 1rem 0;
+    position: unset;
   }
   .redes-sociales {
     font-size: 2.5rem;

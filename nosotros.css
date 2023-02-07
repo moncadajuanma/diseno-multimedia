@@ -81,7 +81,7 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0 10%;
+  margin: 0 15%;
 }
 .nosotros {
   display: flex;
@@ -273,8 +273,7 @@ span {
   .suscribirse {
     flex-direction: column;
     justify-content: center;
-    height: 10.5vh;
-    padding: 1rem 0;
+    height: 16.5vh;
   }
   .suscribirse h3 {
     font-size: 2rem;
