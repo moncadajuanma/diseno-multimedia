@@ -178,8 +178,7 @@ iframe {
 }
 
 /********* MEDIA QUERIE CELULAR **********/
-@media screen and (max-width: 480px) {
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     body {
       display: flex;
       flex-direction: column;
