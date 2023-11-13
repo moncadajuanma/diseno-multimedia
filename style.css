@@ -37,6 +37,9 @@ span {
   text-decoration: none;
   transition: 0.5s;
 }
+#start {
+  color: #1293d4;
+}
 .lista-navbar li a:hover {
   color: #1293d4;
   text-decoration: underline;
@@ -164,7 +167,6 @@ span {
 }
 
 /****************** MEDIA QUERIE **********************/
-
 @media (orientation: landscape) and (max-device-width: 1024px) and (min-device-width: 1024px) {
   body {
     display: flex;
@@ -225,8 +227,9 @@ span {
     font-size: 2rem;
   }
 }
-/****************** MEDIA QUERIE **********************/
 
+
+/****************** MEDIA QUERIE **********************/
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .lista-navbar li a {
     font-size: 1.7rem;
@@ -252,7 +255,6 @@ span {
 }
 
 /****************** MEDIA QUERIE **********************/
-
 @media screen and (max-width: 768px) and (min-width: 480px){
   .encabezado {
     display: flex;
@@ -288,8 +290,8 @@ span {
     position: unset;
   }
 }
-/****************** MEDIA QUERIE **********************/
 
+/****************** MEDIA QUERIE **********************/
 @media screen and (max-width: 480px) {
   body {
     display: flex;
@@ -381,8 +383,8 @@ span {
     font-size: 2.5rem;
   }
 }
-/****************** MEDIA QUERIE **********************/
 
+/****************** MEDIA QUERIE **********************/
 @media (orientation: landscape) and (max-device-width: 944px) {
   .encabezado {
     top: 0%;

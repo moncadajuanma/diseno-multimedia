@@ -38,6 +38,9 @@ span {
   text-decoration: none;
   transition: 0.5s;
 }
+#services {
+  color: #1293d4;
+}
 .lista-navbar li a:hover {
   color: #1293d4;
   text-decoration: underline;
@@ -103,9 +106,10 @@ span {
   background-color: #f4f4f4;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 85%;
   margin: 0.5rem 0;
   margin-left: 5%;
-  padding: 3rem;
+  padding: 1rem;
 }
 .card h2 {
   margin-bottom: 1.5rem;
@@ -142,10 +146,10 @@ span {
 .copyright {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   bottom: 0;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 10vh;
   background-color: #1293d4;
@@ -161,13 +165,137 @@ span {
   color: rgb(0, 0, 0);
 }
 
-/********* MEDIA QUERIE CELULAR **********/
+/****************** MEDIA QUERIE **********************/
+/* @media (orientation: landscape) and (max-device-width: 1024px) and (min-device-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .encabezado {
+    position: sticky;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 0.5rem 0 1rem 0;
+  }
+  .encabezado li a {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+  }
+  .descripcion {
+    justify-content: center;
+    background-size: 100%;
+  }
+  .texto-principal h1 {
+    font-size: 3rem;
+    margin: 0.5rem;
+  }
+  .texto-principal p {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .suscribirse {
+    height: auto;
+    padding: 0.5rem 0;
+  }
+  .suscribirse h3 {
+    text-align: center;
+    font-size: 2rem;
+  }  
+  .boton-suscribirse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .servicios {
+    flex-direction: column;
+    height: auto;
+  }
+  .servicios img {
+    width: 5rem;
+  }
+  .copyright {
+    position: unset;
+    font-size: 1.2rem;
+    height: 10rem;
+    padding: 1rem 0;
+  }
+  .redes-sociales {
+    font-size: 2rem;
+  }
+} */
+
+
+/****************** MEDIA QUERIE **********************/
+/* @media screen and (max-width: 1024px) and (min-width: 768px) {
+  .lista-navbar li a {
+    font-size: 1.7rem;
+  }
+  .texto-principal h1 {
+    font-size: 5.4rem;
+  }
+  .suscribirse h3 {
+    font-size: 2.5rem;
+  }
+  .texto-principal p {
+    font-size: 1.8rem;
+  }
+  .copyright {
+    position: absolute;
+  }
+  .copyright p {
+    font-size: 1.5rem;
+  }
+  .redes-sociales a {
+    font-size: 3.5rem;
+  }
+} */
+
+/****************** MEDIA QUERIE **********************/
+/* @media screen and (max-width: 768px) and (min-width: 480px){
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+  }
+  .encabezado li a {
+    font-size: 2rem;
+  }
+  .texto-principal h1 {
+    font-size: 5rem;
+  }
+  .suscribirse {
+    flex-direction: column;
+    height: auto;
+  }
+  .boton-suscribirse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios {
+    align-items: center;
+    height: auto;
+  }
+  .servicios ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios ul li {
+    width: 70%;
+  }
+  .copyright {
+    position: unset;
+  }
+} */
+
+/****************** MEDIA QUERIE **********************/
 @media screen and (max-width: 480px) {
   body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
   }
   .encabezado {
     display: flex;
@@ -177,20 +305,45 @@ span {
     padding: 1rem 0;
     gap: 1rem;
   }
-  .lista-navbar li a {
+  .title-navbar {
+    font-size: 4rem;
+  }
+  .encabezado li a {
     font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+  .descripcion {
+    justify-content: center;
+    background-size: 100%;
+  }
+  .texto-principal {
+    width: 100%;
+  }
+  .texto-principal h1 {
+    font-size: 3.2rem;
+    margin: 0.5rem;
+  }
+  .texto-principal p {
+    font-size: 1.5rem;
+    text-align: justify;
     margin: 1rem;
   }
   .suscribirse {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 16.5vh;
-    text-align: center;
   }
   .suscribirse h3 {
     font-size: 2rem;
   }
+  .boton-suscribirse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .email {
+    width: 30rem;
+    height: 2.3rem;
     font-size: 1.3rem;
     text-align: center;
   }
@@ -199,10 +352,10 @@ span {
     margin-bottom: 0.5rem;
   }
   .all-services {
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    height: auto;
     width: 100%;
+    align-items: center;
     margin: 0%;
   }
   .services {
@@ -210,29 +363,59 @@ span {
     width: 100%;
   }
   .services h1 {
-    margin-left: 0%;
+margin: 2% 0%;
   }
-  .card {
-    text-align: justify;
-    margin-left: 0%;
-    width: 85%;
-    padding: 1.5rem;
-  }
-  .doing {
-    text-align: justify;
-    width: 85%;
-    margin: 2rem 0 4rem;
-  }
+   .card {
+  width: 85%;
+  margin-left: 0%;
+ }
+ .doing {
+  width: 85%;
+  margin: 3% 0%;
+  padding: 1rem
+ }
   .copyright {
     position: unset;
+    font-size: 1.5rem;
     padding: 0.66rem 0;
-    gap: 1rem;
   }
   .redes-sociales {
     font-size: 2.5rem;
-    text-decoration: none;
   }
-  .redes-sociales a {
-    color: rgb(0, 0, 0);
 }
-}
+
+/****************** MEDIA QUERIE **********************/
+/* @media (orientation: landscape) and (max-device-width: 944px) {
+  .encabezado {
+    top: 0%;
+    padding: 0.5rem 0 1rem 0;
+  }
+  .texto-principal h1 {
+    font-size: 3.5rem;
+    margin: 0.5rem;
+  }
+  .texto-principal p {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+  .suscribirse {
+    height: auto;
+    padding: 0.5rem 0;
+  }
+    .servicios {
+    flex-direction: column;
+    height: auto;
+  }
+  .servicios img {
+    width: 8rem;
+  }
+  .copyright {
+    position: unset;
+    font-size: 1.2rem;
+    height: 15vh;
+    padding: 1rem 0;
+  }
+  .redes-sociales {
+    font-size: 2rem;
+  }
+} */
