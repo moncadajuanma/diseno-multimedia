@@ -291,7 +291,7 @@ span {
 } */
 
 /****************** MEDIA QUERIE **********************/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   body {
     display: flex;
     flex-direction: column;
