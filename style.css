@@ -106,6 +106,8 @@ span {
 .btn:hover {
   background-color: #ff2600;
   color: #24282b;
+  transform: scale(1.05);
+  transition: 500ms;
 }
 .servicios {
   display: flex;
