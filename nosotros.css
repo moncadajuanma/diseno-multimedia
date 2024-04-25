@@ -42,7 +42,7 @@ span {
   color: #1293d4;
 }
 .lista-navbar li a:hover {
-  color: #1293d4;
+  color: #89fe03;
 }
 .suscribirse {
   display: flex;
@@ -82,10 +82,11 @@ span {
   color: #24282b;
 }
 .about {
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0 15%;
+  margin: 0 auto;
 }
 .nosotros {
   display: flex;
@@ -164,6 +165,12 @@ span {
   font-size: 3.5rem;
   text-decoration: none;
 }
+
+i:hover {
+  transition: 500ms;
+  opacity: 0.5;
+}
+
 .redes-sociales a {
   color: rgb(0, 0, 0);
 }

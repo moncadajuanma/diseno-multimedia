@@ -42,7 +42,7 @@ span {
   color: #1293d4;
 }
 .lista-navbar li a:hover {
-  color: #1293d4;
+  color: #89fe03;
 }
 .suscribirse {
   display: flex;
@@ -82,19 +82,19 @@ span {
   color: #24282b;
 }
 .principal {
+  width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-items: center;
   height: 69vh;
-  margin: 0 15%;
+  margin: 0 auto;
 }
 .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 65vh; */
-  width: 60%;
+  width: 55%;
 }
 .titulo-contacto {
   font-size: 3rem;
@@ -113,13 +113,14 @@ label {
   margin: 1rem 0 0.5rem;
 }
 input {
+  width: 95%;
   height: 2rem;
-  padding: 0.5rem 2rem ;
+  padding: 0.5rem 1rem ;
   font-size: 1.5rem;
   border: 1px solid #31313170;
 }
 textarea {
-  width: 97%;
+  width: 95%;
   padding: 1rem;
   border: 1px solid #80808070;
 }
@@ -131,8 +132,7 @@ textarea {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  /* height: 65vh; */
-  width: 40%;
+  width: 45%;
 }
 .card-hacemos {
   text-align: justify;
@@ -172,6 +172,10 @@ iframe {
 .redes-sociales {
   font-size: 3.5rem;
   text-decoration: none;
+}
+i:hover {
+  transition: 500ms;
+  opacity: 0.5;
 }
 .redes-sociales a {
   color: rgb(0, 0, 0);

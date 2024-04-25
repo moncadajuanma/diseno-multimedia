@@ -41,7 +41,7 @@ span {
   color: #1293d4;
 }
 .lista-navbar li a:hover {
-  color: #1293d4;
+  color: #89fe03;
   text-decoration: underline;
 }
 .descripcion {
@@ -144,6 +144,13 @@ span {
   font-size: 1.5rem;
   text-align: justify;
 }
+
+li:hover {
+  transform: scale(1.05);
+  transition: 500ms;
+  opacity: 0.8;
+}
+
 .copyright {
   display: flex;
   flex-direction: column;
@@ -162,6 +169,12 @@ span {
   font-size: 3.5rem;
   text-decoration: none;
 }
+
+i:hover {
+  transition: 500ms;
+  opacity: 0.5;
+}
+
 .redes-sociales a {
   color: rgb(0, 0, 0);
 }

@@ -2,7 +2,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   height: 100vh;
   background-color: #f4f4f4;
 }
@@ -16,7 +16,7 @@ body {
   max-width: 100%;
   height: 10vh;
   background-color: #24282b;
-  border-bottom: solid 5px #1293d4 ;
+  border-bottom: solid 5px #1293d4;
 }
 .title-navbar {
   font-size: 4rem;
@@ -42,7 +42,7 @@ span {
   color: #1293d4;
 }
 .lista-navbar li a:hover {
-  color: #1293d4;
+  color: #89fe03;
   text-decoration: underline;
 }
 .suscribirse {
@@ -83,10 +83,11 @@ span {
   color: #24282b;
 }
 .all-services {
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0 15%;
+  margin: 0 auto;
 }
 .services {
   display: flex;
@@ -106,7 +107,7 @@ span {
   background-color: #f4f4f4;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    width: 85%;
+  width: 85%;
   margin: 0.5rem 0;
   margin-left: 5%;
   padding: 1rem;
@@ -161,6 +162,12 @@ span {
   font-size: 3.5rem;
   text-decoration: none;
 }
+
+i:hover {
+  transition: 500ms;
+  opacity: 0.5;
+}
+
 .redes-sociales a {
   color: rgb(0, 0, 0);
 }
@@ -226,7 +233,6 @@ span {
     font-size: 2rem;
   }
 } */
-
 
 /****************** MEDIA QUERIE **********************/
 /* @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -363,17 +369,17 @@ span {
     width: 100%;
   }
   .services h1 {
-margin: 2% 0%;
+    margin: 2% 0%;
   }
-   .card {
-  width: 85%;
-  margin-left: 0%;
- }
- .doing {
-  width: 85%;
-  margin: 3% 0%;
-  padding: 1rem
- }
+  .card {
+    width: 85%;
+    margin-left: 0%;
+  }
+  .doing {
+    width: 85%;
+    margin: 3% 0%;
+    padding: 1rem;
+  }
   .copyright {
     position: unset;
     font-size: 1.5rem;
